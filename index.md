@@ -1,8 +1,6 @@
-## Algorithm Study Record by 주현 
+# 다익스트라 
 
-### 다익스트라 
-
-#### 네트워크 딜레이 타임 - leetcode 743
+## 네트워크 딜레이 타임 - leetcode 743
   https://leetcode.com/problems/network-delay-time
   ``` python
   def networkDelayTime(self, times: List[List[int]], N: int, K: int) -> int:

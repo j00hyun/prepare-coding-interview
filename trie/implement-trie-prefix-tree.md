@@ -4,6 +4,7 @@
 ``` python
 import collections
 
+# 트라이의 노드 
 class TrieNode:
     def __init__(self):
         self.word = False
@@ -12,7 +13,8 @@ class TrieNode:
 class Trie:
     def __init__(self):
         self.root = TrieNode()
-
+    
+    # 단어 삽입 
     def insert(self, word: str) -> None:
         node = self.root
 
@@ -21,6 +23,7 @@ class Trie:
 
         node.word = True
 
+    # 단어 존재 여부 판별 
     def search(self, word: str) -> bool:
         node = self.root
 
@@ -31,6 +34,7 @@ class Trie:
 
         return node.word
 
+    # 문자열로 시작 단어 존재 여부 판별 
     def startsWith(self, prefix: str) -> bool:
         node = self.root
 
